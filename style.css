@@ -571,6 +571,13 @@ body {
   transition: color 0.2s, border-color 0.2s;
 }
 
+.badge-status {
+  background: rgba(245, 158, 11, 0.12);
+  border-color: rgba(245, 158, 11, 0.4);
+  color: #f59e0b;
+  font-weight: 600;
+}
+
 .project-card:hover .badge {
   color: var(--accent);
   border-color: var(--accent);
