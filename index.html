@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arnaud Santschi — Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.16.0/devicon.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark" data-lang="fr">
+
+  <div id="scroll-progress"></div>
+
+  <button id="back-to-top" aria-label="Retour en haut">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <header class="navbar">
+    <div class="logo">
+      <img src="favicon.svg" alt="Logo Arnaud Santschi" class="logo-img">
+      <span>Arnaud Santschi</span>
+    </div>
+
+    <nav id="nav-links">
+      <a href="#about"><span class="fr">À propos</span><span class="en">About</span><span class="de">Über mich</span></a>
+      <a href="#skills"><span class="fr">Compétences</span><span class="en">Skills</span><span class="de">Kenntnisse</span></a>
+      <a href="#projects"><span class="fr">Projets</span><span class="en">Projects</span><span class="de">Projekte</span></a>
+      <a href="#process"><span class="fr">Processus</span><span class="en">Process</span><span class="de">Ablauf</span></a>
+      <a href="#testimonials"><span class="fr">Témoignages</span><span class="en">Testimonials</span><span class="de">Referenzen</span></a>
+      <a href="#faq"><span class="fr">FAQ/Avis</span><span class="en">FAQ/Reviews</span><span class="de">FAQ/Bewertungen</span></a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-controls">
+      <div class="lang-switcher">
+        <button type="button" id="lang-toggle" aria-label="Changer de langue"><span id="lang-flag">🇫🇷</span></button>
+        <div class="lang-menu">
+          <button type="button" class="lang-option" data-lang="fr">🇫🇷 Français</button>
+          <button type="button" class="lang-option" data-lang="en">🇬🇧 English</button>
+          <button type="button" class="lang-option" data-lang="de">🇩🇪 Deutsch</button>
+        </div>
+      </div>
+      <button id="theme-toggle" aria-label="Changer de thème">🌙</button>
+      <button id="motion-toggle" aria-label="Réduire les animations">✨</button>
+      <button id="nav-toggle" aria-label="Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="availability-badge"><span class="availability-dot"></span><span class="fr">Disponible pour de nouvelles missions</span><span class="en">Available for new projects</span><span class="de">Verfügbar für neue Projekte</span></div>
+      <p class="hero-kicker"><span class="fr">Bonjour, je m'appelle</span><span class="en">Hi, I'm</span><span class="de">Hallo, ich bin</span></p>
+      <h1>Arnaud Santschi</h1>
+      <p class="hero-desc"><span class="fr">Je conçois des outils et des sites qui résolvent vos problèmes.</span><span class="en">I build tools and websites that solve your problems.</span><span class="de">Ich entwickle Tools und Websites, die Ihre Probleme lösen.</span></p>
+      <p class="hero-role"><span id="typewriter"></span><span class="cursor">|</span></p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn"><span class="fr">Voir mes projets</span><span class="en">View my projects</span><span class="de">Meine Projekte ansehen</span></a>
+        <a href="#contact" class="btn btn-outline"><span class="fr">Me contacter</span><span class="en">Contact me</span><span class="de">Kontaktieren Sie mich</span></a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <section id="about" class="section alt reveal">
+   <div class="section-inner">
+    <h2><span class="fr">À propos de moi</span><span class="en">About me</span><span class="de">Über mich</span></h2>
+    <p class="fr">
+      Je transforme des idées concrètes en outils qui fonctionnent vraiment.
+      Mon premier projet sérieux, une carte interactive des randonnées de ma
+      région, m'a appris à assembler données réelles, code Python et interface
+      claire pour résoudre un problème précis. Je code avec rigueur, j'apprends
+      vite, et je m'implique pleinement dans chaque projet qu'on me confie —
+      aujourd'hui, je suis prêt à mettre ça au service de vos projets en freelance.
+    </p>
+    <p class="en">
+      I turn concrete ideas into tools that actually work.
+      My first serious project, an interactive hiking-trail map of my region,
+      taught me to combine real-world data, Python code and a clear interface
+      to solve a specific problem. I code with rigor, I learn fast, and I fully
+      commit to every project I take on — today, I'm ready to put that to work
+      on your freelance projects.
+    </p>
+    <p class="de">
+      Ich verwandle konkrete Ideen in Tools, die wirklich funktionieren.
+      Mein erstes ernsthaftes Projekt, eine interaktive Wanderkarte meiner
+      Region, hat mir gezeigt, wie man reale Daten, Python-Code und eine klare
+      Benutzeroberfläche kombiniert, um ein konkretes Problem zu lösen. Ich
+      programmiere sorgfältig, lerne schnell und engagiere mich voll für jedes
+      Projekt, das mir anvertraut wird — heute bin ich bereit, das für Ihre
+      Freelance-Projekte einzusetzen.
+    </p>
+   </div>
+  </section>
+
+  <section id="skills" class="section reveal">
+   <div class="section-inner">
+    <h2><span class="fr">Compétences</span><span class="en">Skills</span><span class="de">Kenntnisse</span></h2>
+    <div class="skills-grid">
+      <button type="button" aria-expanded="false" class="skill-badge" style="--brand:#3776AB">
+        <i class="devicon-python-plain colored skill-icon"></i><span>Python</span>
+        <span class="skill-tooltip"><span class="fr">Langage principal que j'utilise pour traiter des données et écrire des scripts.</span><span class="en">Main language I use to process data and write scripts.</span><span class="de">Hauptsprache, die ich zur Datenverarbeitung und für Skripte verwende.</span></span>
+      </button>
+      <button type="button" aria-expanded="false" class="skill-badge" style="--brand:#E34F26">
+        <i class="devicon-html5-plain colored skill-icon"></i><span>HTML</span>
+        <span class="skill-tooltip"><span class="fr">Langage utilisé pour structurer le contenu des pages web.</span><span class="en">Language used to structure web page content.</span><span class="de">Sprache zur Strukturierung von Webseiteninhalten.</span></span>
+      </button>
+      <button type="button" aria-expanded="false" class="skill-badge" style="--brand:#1572B6">
+        <i class="devicon-css3-plain colored skill-icon"></i><span>CSS</span>
+        <span class="skill-tooltip"><span class="fr">Langage utilisé pour styliser et mettre en page les sites web.</span><span class="en">Language used to style and lay out websites.</span><span class="de">Sprache zur Gestaltung und zum Layout von Websites.</span></span>
+      </button>
+      <button type="button" aria-expanded="false" class="skill-badge" style="--brand:#F7DF1E">
+        <i class="devicon-javascript-plain colored skill-icon"></i><span>JavaScript</span>
+        <span class="skill-tooltip"><span class="fr">Langage qui rend les pages web interactives et dynamiques, comme sur ce site.</span><span class="en">Language that makes web pages interactive and dynamic, like this site.</span><span class="de">Sprache, die Webseiten interaktiv und dynamisch macht, wie auf dieser Seite.</span></span>
+      </button>
+      <button type="button" aria-expanded="false" class="skill-badge" style="--brand:#F05032">
+        <i class="devicon-git-plain colored skill-icon"></i><span>Git &amp; GitHub</span>
+        <span class="skill-tooltip"><span class="fr">Outils pour suivre l'évolution de mon code et héberger mes projets en ligne.</span><span class="en">Tools to track my code's history and host my projects online.</span><span class="de">Werkzeuge, um die Entwicklung meines Codes zu verfolgen und meine Projekte online zu hosten.</span></span>
+      </button>
+      <button type="button" aria-expanded="false" class="skill-badge" style="--brand:#150458">
+        <i class="fa-solid fa-table skill-icon" style="color:var(--brand)"></i><span>Pandas</span>
+        <span class="skill-tooltip"><span class="fr">Bibliothèque de référence pour organiser et analyser des données sous forme de tableaux.</span><span class="en">Go-to library for organizing and analyzing data in table form.</span><span class="de">Referenzbibliothek zum Organisieren und Analysieren von Daten in Tabellenform.</span></span>
+      </button>
+      <button type="button" aria-expanded="false" class="skill-badge" style="--brand:#139C5A">
+        <i class="fa-solid fa-earth-europe skill-icon" style="color:var(--brand)"></i><span>GeoPandas</span>
+        <span class="skill-tooltip"><span class="fr">Extension de Pandas pour manipuler des données géographiques (points, lignes, zones).</span><span class="en">Extension of Pandas for handling geographic data (points, lines, areas).</span><span class="de">Erweiterung von Pandas zur Verarbeitung geografischer Daten (Punkte, Linien, Flächen).</span></span>
+      </button>
+      <button type="button" aria-expanded="false" class="skill-badge" style="--brand:#F16529">
+        <i class="fa-solid fa-draw-polygon skill-icon" style="color:var(--brand)"></i><span>Shapely</span>
+        <span class="skill-tooltip"><span class="fr">Bibliothèque pour créer et manipuler des formes géométriques (lignes, polygones, points).</span><span class="en">Library for creating and manipulating geometric shapes (lines, polygons, points).</span><span class="de">Bibliothek zum Erstellen und Bearbeiten geometrischer Formen (Linien, Polygone, Punkte).</span></span>
+      </button>
+      <button type="button" aria-expanded="false" class="skill-badge" style="--brand:#77B829">
+        <i class="fa-solid fa-map-location-dot skill-icon" style="color:var(--brand)"></i><span>Folium</span>
+        <span class="skill-tooltip"><span class="fr">Bibliothèque Python pour créer des cartes interactives (basée sur Leaflet.js).</span><span class="en">Python library for building interactive maps (built on Leaflet.js).</span><span class="de">Python-Bibliothek zur Erstellung interaktiver Karten (basierend auf Leaflet.js).</span></span>
+      </button>
+      <button type="button" aria-expanded="false" class="skill-badge" style="--brand:#02569B">
+        <i class="fa-solid fa-globe skill-icon" style="color:var(--brand)"></i><span>Requests</span>
+        <span class="skill-tooltip"><span class="fr">Bibliothèque Python pour récupérer des données depuis des sites ou des API en ligne.</span><span class="en">Python library for fetching data from websites or online APIs.</span><span class="de">Python-Bibliothek zum Abrufen von Daten von Websites oder Online-APIs.</span></span>
+      </button>
+    </div>
+   </div>
+  </section>
+
+  <section id="projects" class="section alt reveal">
+   <div class="section-inner">
+    <h2><span class="fr">Mes projets</span><span class="en">My projects</span><span class="de">Meine Projekte</span></h2>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <h3><span class="fr">Carte interactive des randonnées</span><span class="en">Interactive hiking map</span><span class="de">Interaktive Wanderkarte</span></h3>
+        <p class="fr">
+          Une application qui recense les randonnées de ma région sur une
+          carte interactive, générée en Python à partir de données
+          géographiques (sentiers, parkings, arrêts de transport).
+        </p>
+        <p class="en">
+          An application that maps out the hiking trails in my region on an
+          interactive map, generated in Python from geographic data
+          (trails, parking spots, transit stops).
+        </p>
+        <p class="de">
+          Eine Anwendung, die die Wanderwege meiner Region auf einer
+          interaktiven Karte darstellt, erstellt in Python aus geografischen
+          Daten (Wege, Parkplätze, Haltestellen).
+        </p>
+        <div class="badges">
+          <span class="badge">Python</span>
+          <span class="badge">Folium</span>
+          <span class="badge">GeoPandas</span>
+        </div>
+        <div class="project-links">
+          <a href="randonnee-map.html" target="_blank" class="project-link">
+            <span class="fr">Voir la carte en direct →</span><span class="en">View live map →</span><span class="de">Karte live ansehen →</span>
+          </a>
+          <a href="https://github.com/Santschi-Arnaud/randonn-e-le-Locle" target="_blank" class="project-link">
+            <span class="fr">Voir sur GitHub →</span><span class="en">View on GitHub →</span><span class="de">Auf GitHub ansehen →</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card placeholder">
+        <h3><span class="fr">Prochain projet</span><span class="en">Next project</span><span class="de">Nächstes Projekt</span></h3>
+        <p><span class="fr">Un nouveau projet arrive bientôt ici.</span><span class="en">A new project is coming soon.</span><span class="de">Ein neues Projekt kommt bald hier.</span></p>
+      </div>
+
+    </div>
+   </div>
+  </section>
+
+  <section id="process" class="section reveal">
+   <div class="section-inner">
+    <h2><span class="fr">Comment je travaille</span><span class="en">How I work</span><span class="de">Wie ich arbeite</span></h2>
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="process-number">1</div>
+        <h3><span class="fr">On échange</span><span class="en">We talk</span><span class="de">Wir sprechen</span></h3>
+        <p><span class="fr">Vous m'expliquez vos besoins, je pose les bonnes questions pour bien les cerner.</span><span class="en">You explain your needs, and I ask the right questions to fully understand them.</span><span class="de">Sie erklären mir Ihre Bedürfnisse, ich stelle die richtigen Fragen, um sie genau zu verstehen.</span></p>
+      </div>
+      <div class="process-step">
+        <div class="process-number">2</div>
+        <h3><span class="fr">Je propose</span><span class="en">I propose</span><span class="de">Ich schlage vor</span></h3>
+        <p><span class="fr">Une solution concrète, un délai réaliste, et un prix clair avant de commencer.</span><span class="en">A concrete solution, a realistic timeline, and a clear price before we start.</span><span class="de">Eine konkrete Lösung, einen realistischen Zeitrahmen und einen klaren Preis, bevor wir beginnen.</span></p>
+      </div>
+      <div class="process-step">
+        <div class="process-number">3</div>
+        <h3><span class="fr">Je développe</span><span class="en">I build</span><span class="de">Ich entwickle</span></h3>
+        <p><span class="fr">Je vous tiens informé de l'avancement, avec des points d'étape réguliers.</span><span class="en">I keep you updated on progress, with regular check-ins.</span><span class="de">Ich halte Sie über den Fortschritt auf dem Laufenden, mit regelmäßigen Updates.</span></p>
+      </div>
+      <div class="process-step">
+        <div class="process-number">4</div>
+        <h3><span class="fr">Je livre</span><span class="en">I deliver</span><span class="de">Ich liefere</span></h3>
+        <p><span class="fr">Le projet final, testé et prêt à l'emploi, avec un suivi si besoin après livraison.</span><span class="en">The finished project, tested and ready to use, with follow-up support if needed.</span><span class="de">Das fertige Projekt, getestet und einsatzbereit, mit Unterstützung nach der Lieferung bei Bedarf.</span></p>
+      </div>
+    </div>
+   </div>
+  </section>
+
+  <section id="testimonials" class="section alt reveal">
+   <div class="section-inner">
+    <h2><span class="fr">Témoignages</span><span class="en">Testimonials</span><span class="de">Referenzen</span></h2>
+    <div class="testimonial-placeholder">
+      <i class="fa-solid fa-quote-left testimonial-icon"></i>
+      <p class="fr">Les avis de mes premiers clients apparaîtront ici. En attendant, la section « Votre avis compte » plus bas reste ouverte à tous vos retours.</p>
+      <p class="en">Reviews from my first clients will appear here. In the meantime, the "Your feedback matters" section below is open to everyone's input.</p>
+      <p class="de">Bewertungen meiner ersten Kunden werden hier erscheinen. In der Zwischenzeit steht der Bereich „Ihre Meinung zählt" weiter unten für Ihr Feedback offen.</p>
+    </div>
+   </div>
+  </section>
+
+  <section id="faq" class="section reveal">
+   <div class="section-inner">
+    <h2><span class="fr">Questions fréquentes</span><span class="en">Frequently asked questions</span><span class="de">Häufig gestellte Fragen</span></h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button type="button" class="faq-question" aria-expanded="false">
+          <span class="fr">Quels types de projets pouvez-vous réaliser ?</span>
+          <span class="en">What kind of projects can you take on?</span>
+          <span class="de">Welche Art von Projekten können Sie umsetzen?</span>
+          <i class="fa-solid fa-chevron-down faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p class="fr">Pour l'instant : des sites web (vitrines, portfolios) et des outils Python sur mesure : traitement de données, cartes interactives, automatisation de tâches. Je continue à me former pour élargir mes compétences à d'autres domaines dans le futur.</p>
+          <p class="en">For now: websites (showcase sites, portfolios) and custom Python tools: data processing, interactive maps, task automation. I'm continuing to train to expand my skills into other areas in the future.</p>
+          <p class="de">Aktuell: Websites (Vitrinen, Portfolios) und maßgeschneiderte Python-Tools: Datenverarbeitung, interaktive Karten, Aufgabenautomatisierung. Ich bilde mich weiter, um meine Fähigkeiten in Zukunft auf weitere Bereiche auszuweiten.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button type="button" class="faq-question" aria-expanded="false">
+          <span class="fr">Combien de temps prend un projet ?</span>
+          <span class="en">How long does a project take?</span>
+          <span class="de">Wie lange dauert ein Projekt?</span>
+          <i class="fa-solid fa-chevron-down faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p class="fr">Ça dépend de la complexité, mais je donne toujours une estimation claire avant de commencer, après avoir discuté de vos besoins.</p>
+          <p class="en">It depends on the complexity, but I always give a clear estimate before starting, after discussing your needs.</p>
+          <p class="de">Das hängt von der Komplexität ab, aber ich gebe immer eine klare Einschätzung, bevor ich beginne, nachdem wir Ihre Bedürfnisse besprochen haben.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button type="button" class="faq-question" aria-expanded="false">
+          <span class="fr">Comment se passe la collaboration ?</span>
+          <span class="en">How does the collaboration work?</span>
+          <span class="de">Wie läuft die Zusammenarbeit ab?</span>
+          <i class="fa-solid fa-chevron-down faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p class="fr">On échange d'abord sur vos besoins, je propose une solution et un délai, puis je vous tiens informé de l'avancement jusqu'à la livraison finale.</p>
+          <p class="en">We first talk about your needs, I propose a solution and a timeline, then I keep you updated on progress until final delivery.</p>
+          <p class="de">Wir sprechen zunächst über Ihre Bedürfnisse, ich schlage eine Lösung und einen Zeitrahmen vor und halte Sie dann bis zur endgültigen Lieferung über den Fortschritt auf dem Laufenden.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button type="button" class="faq-question" aria-expanded="false">
+          <span class="fr">Êtes-vous disponible actuellement ?</span>
+          <span class="en">Are you currently available?</span>
+          <span class="de">Sind Sie derzeit verfügbar?</span>
+          <i class="fa-solid fa-chevron-down faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p class="fr">Oui, je suis ouvert à de nouvelles missions freelance — contactez-moi pour en discuter.</p>
+          <p class="en">Yes, I'm open to new freelance projects — contact me to discuss it.</p>
+          <p class="de">Ja, ich bin offen für neue Freelance-Projekte — kontaktieren Sie mich, um darüber zu sprechen.</p>
+        </div>
+      </div>
+
+    </div>
+   </div>
+  </section>
+
+  <section id="feedback" class="section alt reveal">
+   <div class="section-inner">
+    <h2><span class="fr">Votre avis compte</span><span class="en">Your feedback matters</span><span class="de">Ihre Meinung zählt</span></h2>
+    <p class="fr">Une remarque, une critique, quelque chose qui vous a dérangé sur ce site ou sur l'un de mes projets ? Dites-le-moi, ça m'aidera à m'améliorer.</p>
+    <p class="en">A remark, a criticism, something you didn't like about this site or one of my projects? Let me know, it'll help me improve.</p>
+    <p class="de">Eine Anmerkung, Kritik, etwas, das Ihnen an dieser Seite oder einem meiner Projekte nicht gefallen hat? Sagen Sie es mir, das hilft mir, mich zu verbessern.</p>
+    <form id="feedback-form" class="feedback-form">
+      <input type="text" id="feedback-name" data-fr-placeholder="Votre nom (optionnel)" data-en-placeholder="Your name (optional)" data-de-placeholder="Ihr Name (optional)" placeholder="Votre nom (optionnel)">
+      <textarea id="feedback-message" rows="4" data-fr-placeholder="Votre message..." data-en-placeholder="Your message..." data-de-placeholder="Ihre Nachricht..." placeholder="Votre message..." required></textarea>
+      <button type="submit" class="btn"><span class="fr">Envoyer</span><span class="en">Send</span><span class="de">Senden</span></button>
+    </form>
+   </div>
+  </section>
+
+  <section id="contact" class="section reveal">
+   <div class="section-inner">
+    <h2>Contact</h2>
+    <p class="fr">N'hésitez pas à me contacter pour toute question ou proposition de collaboration.</p>
+    <p class="en">Feel free to contact me for any question or collaboration proposal.</p>
+    <p class="de">Zögern Sie nicht, mich für Fragen oder Kooperationsvorschläge zu kontaktieren.</p>
+    <div class="contact-links">
+      <a href="mailto:santschiar@gmail.com">📧 santschiar@gmail.com</a>
+      <a href="https://github.com/Santschi-Arnaud" target="_blank">💻 GitHub</a>
+    </div>
+    <form id="contact-form" class="feedback-form">
+      <input type="text" id="contact-name" data-fr-placeholder="Votre nom" data-en-placeholder="Your name" data-de-placeholder="Ihr Name" placeholder="Votre nom" required>
+      <input type="text" id="contact-subject" data-fr-placeholder="Sujet" data-en-placeholder="Subject" data-de-placeholder="Betreff" placeholder="Sujet" required>
+      <textarea id="contact-message" rows="5" data-fr-placeholder="Votre message..." data-en-placeholder="Your message..." data-de-placeholder="Ihre Nachricht..." placeholder="Votre message..." required></textarea>
+      <button type="submit" class="btn"><span class="fr">Envoyer</span><span class="en">Send</span><span class="de">Senden</span></button>
+    </form>
+   </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Arnaud Santschi</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
